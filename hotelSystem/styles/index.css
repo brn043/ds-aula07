@@ -1,0 +1,44 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    overflow: hidden;
+}
+
+main img{
+    width: 100%;
+    height: 960px;
+    overflow: hidden;
+    position: absolute;
+}
+
+.container{
+    width: 100%;
+    height: 960px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-block{
+    width: 800px;
+    height: 500px;
+    background-color: #282828;
+    box-shadow: 0 7px 10px #28282880;
+    border-radius: 5px;
+    z-index: 10;
+    color: aliceblue;
+    font-size: 22px;    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50px 50px; 
+    grid-template-areas: "login input-login"
+                         "senha input-senha"
+                         "entrar entrar"
+                         "resgistrar registrar";
+    align-content: center;
+}
+
+.login-block span{
+    margin-left: 10%;
+    margin-bottom: 30px;
+}
